@@ -72,8 +72,11 @@
             <a class="nav-link" href="#toy" data-toggle="collapse" data-target=".navbar-collapse.show">Toy Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Team Project</a>
-          </li>    
+            <a class="nav-link" href="#team" data-toggle="collapse" data-target=".navbar-collapse.show">Team Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#end" data-toggle="collapse" data-target=".navbar-collapse.show">End</a>
+          </li>
         </ul>
       </div>  
     </nav>
@@ -92,21 +95,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/img01.jpg" alt="Codings" width="1700" height="914">
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="position: absolute; bottom: 80%;">
                 <h3>Code</h3>
                 <p>내 뇌속에 들어있는 코드들.</p>
               </div>
           </div>
           <div class="carousel-item">
             <img src="img/img02.jpg" alt="Computer" width="1700" height="914">
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="position: absolute; bottom: 80%;">
                 <h3>Computer</h3>
                 <p>심플한 테이블 위 노트북과 환경.</p>
               </div>
           </div>
           <div class="carousel-item">
             <img src="img/img03.jpg" alt="Coding User" width="1700" height="914">
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="position: absolute; bottom: 80%;">
                 <h3>User</h3>
                 <p>고독하게 코딩하는 나.</p>
               </div>
@@ -153,7 +156,7 @@
     <!-- 자기소개.END -->
     <!-- toy project.START ------------------------------------------------------------------->
     <div id="toy" class="container text-center">
-        <h3 style="font-family: 'Prompt', sans-serif;"><i class="fa-solid fa-handshake-simple-slash style="color: green;"></i>Toy Project</h3>
+        <h3 style="font-family: 'Prompt', sans-serif;"><i class="fa-solid fa-handshake-simple-slash" style="color: lightgreen;"></i>Toy Project</h3>
         <p>공부하면서 작성해 본 Toy Project입니다.</p>
         <br>
         <div class="row">
@@ -181,7 +184,7 @@
     <!-- toy project.END -->
     <!-- team project.START ----------------------------------------------------------------->
     <div id="team" class="container text-center">
-      <h3 style="font-family: 'Prompt', sans-serif;"><i class="fa-solid fa-handshake-simple style="color: green;"></i>Team Project</h3>
+      <h3 style="font-family: 'Prompt', sans-serif;"><i class="fa-solid fa-handshake-simple" style="color: green;"></i>Team Project</h3>
       <p>여러 기업, 사람들과 협업하며 만든 Team Project입니다.</p>
       <br>
       <div class="row">
@@ -207,5 +210,38 @@
       </div>
   </div>
     <!-- team project.END -->
+
+    <!-- Footer.START -->
+    <div id="end" class="container-fluid" style="background: #333333;">
+      <div class="container" style="color: white;">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love our fans!</em></p>
+        <div class="row test">
+          <div class="col-md-4">
+            <p><i class="fa-brands fa-instagram" style="color: lightpink;"></i>instagram : t_0120_h</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span><i class="fa-solid fa-earth-asia" style="color: lightblue;"></i>Incheon, Bupyeong</p>
+            <p><span class="glyphicon glyphicon-phone"></span><i class="fa-solid fa-mobile-screen-button" style="color: black;"></i>Phone: 010-8969-7975</p>
+            <p><span class="glyphicon glyphicon-envelope"></span><i class="fa-solid fa-square-envelope" style="color: white;"></i>Email: taeho0759@gmail.com</p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button style="color: white;" class="btn pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer.END -->
 </body>
 </html>
