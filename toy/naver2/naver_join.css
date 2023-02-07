@@ -1,0 +1,191 @@
+html, body {
+	margin: 0px;
+	height: 100%;
+	background-color: #f5f6f7;
+}
+.mainfr {
+	width: 460px;
+	margin: 0px auto;
+}
+.logo_box {
+	display: inline-block;
+	width: 240px;
+	height: 44px;
+	overflow: hidden;
+}
+.logo_fr {
+	text-align: center;
+	height: 44px;
+	margin: 60px 0px 20px;
+}
+.itemfr {
+	margin-top: 19px;
+}
+.label_fr {
+	height: 16px;
+	padding-bottom: 8px;
+}
+
+[for] {
+	font-size:14px;
+	font-weight: bold;
+}
+.input_fr {
+	height: 51px;
+	padding: 0px;
+}
+
+#id {
+	width: 334px;
+	height: 29px;
+	border: 1px solid lightgray;
+	padding: 10px 110px 10px 14px;
+}
+#id + span {
+	display: block;
+	float: right;
+	color: lightgray;
+	position: relative;
+	bottom: 38px;
+	right: 13px;
+}
+
+.pwin {
+	width: 404px;
+	height: 29px;
+	border: 1px solid lightgray;
+	padding: 10px 40px 10px 14px;
+}
+#pw + span, #repw + span {
+	display: block;
+	float: right;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	bottom: 37px;
+	right: 14px;
+	overflow: hidden;
+}
+#pw + span > img {
+	width: 125px;
+	height: 75px;
+}
+#repw + span > img {
+	width: 125px;
+	height: 75px;
+	position: relative;
+	right: 24px;
+}
+.intext {
+	width: 430px;
+	height: 29px;
+	padding: 10px 14px;
+	border: 1px solid lightgray;
+}
+.intext2 {
+	width: 305px;
+	height: 29px;
+	padding: 10px 14px;
+	border: 1px solid lightgray;
+}
+.birthIn {
+	display: inline-block;
+	width: 117px;
+	height: 27px;
+	border: 1px solid lightgray;
+	padding: 11px 14px;
+}
+[for="mail"] > span {
+	font-size: 12px;
+	color: gray;
+}
+.birthIn:first-child {
+	float: left;
+}
+.birthIn:last-child {
+	float: right;
+}
+[name="mon"] {
+	display: block;
+	width: 147px;
+	height: 51px;
+	border: 1px solid lightgray;
+	padding: 11px 14px;
+	float: left;
+	margin-left: 10px;
+}
+/* 성별 */
+.genfr, .telfr {
+	width: 437px;
+	height: 29px;
+	border: 1px solid lightgray;
+	padding: 10px 7px 10px 14px;
+	background-color: white;
+}
+#gen, #tel {
+	width: 437px;
+	height: 29px;
+	border: 0px;
+}
+#authcode {
+	background-color: #f7f7f7;
+}
+.mgt10 {
+	margin-top: 10px;
+}
+.btn {
+	width: 115px;
+	height: 51px;
+	font-size: 15px;
+	font-weight: bold;
+	float: right;
+	background-color: #03c75a;
+	color: white;
+	text-align: center;
+	line-height: 335%;
+	cursor: pointer;
+}
+#jbtn {
+	width: 460px;
+	height: 53px;
+	cursor: pointer;
+	background-color: #03c75a;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 320%;
+	margin: 30px 0px 9px;
+}
+
+.footer {
+	text-align: center;
+	padding: 30px 0px 15px;
+	color: #7e7e7e;
+}
+.footer > ul {
+	margin-top: 0px;
+	margin-bottom: 9px;
+	height: 10px;
+	padding: 0px;
+}
+.footer > ul a {
+	text-decoration: none;
+	color: #7e7e7e;
+	font-size: 12px;
+	position: relative;
+	bottom: 7px;
+}
+.footer li {
+	list-style-type : none;
+	display: inline-block;
+	height: 10px;
+}
+.footer > span {
+	font-size: 12px;
+	font-weight: 400;
+}
+.liblock {
+	padding-left: 5px;
+	border-left: 1px solid #bebebe;
+}

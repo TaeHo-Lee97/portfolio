@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smile</title>
+<link rel="stylesheet" type="text/css" href="./w3.css">
+<link rel="stylesheet" type="text/css" href="./join.css">
+<script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="./join.js"></script>
+</head>
+<body>
+	<div class="w3-content mxw650 w3-center">
+		<!-- 타이틀 -->
+		<h1 class="w3-pink w3-padding w3-card-4 mgt20 w3-round-medium">Smart Join</h1>
+		<!--  입력 폼 -->
+		<form method="POST" action="" name="frm" id="frm" class="w3-col w3-padding mgt20 w3-card-4 w3-round-medium">
+			<div class="w3-col mgt20">
+				<label for="name" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">이름 :</label>
+				<input type="text" name="name" id="name" class="w3-col s12 m8 w3-input w3-border w3-round-medium" placeholder="이름을 입력하세요!">
+			</div>
+			<div class="w3-col mgt10">
+				<label for="id" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">I D :</label>
+				<div class="w3-col s12 m8">
+					<input type="text" name="id" id="id" class="w3-col m9 w3-input w3-border w3-round-medium" placeholder="아이디를 입력하세요!">
+					<div class="w3-col m3 w3-right pdl10">
+						<div class="w3-col w3-right w3-button w3-blue w3-card w3-hover-red" id="check">check</div>
+					</div>
+				</div>
+			</div>
+			<p class="w3-center" id="idmsg"></p>
+			<div class="w3-col mgt10">
+				<label for="pw" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">P W :</label>
+				<input type="password" name="pw" id="pw" class="w3-col s12 m8 w3-input w3-border w3-round-medium" placeholder="비밀번호를 입력하세요!">
+			</div>
+			<div class="w3-col mgt10">
+				<label for="repw" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">rePW :</label>
+				<input type="password" name="repw" id="repw" class="w3-col s12 m8 w3-input w3-border w3-round-medium" placeholder="비밀번호를 입력하세요!">
+			</div>
+			<p class="w3-center" id="pwmsg"></p>
+			<div class="w3-col mgt10">
+				<label for="mail" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">mail :</label>
+				<input type="text" name="mail" id="mail" class="w3-col s12 m8 w3-input w3-border w3-round-medium" placeholder="이메일을 입력하세요!">
+			</div>
+			<div class="w3-col mgt10">
+				<label for="phone" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">phone :</label>
+				<input type="text" name="phone" id="phone" class="w3-col s12 m8 w3-input w3-border w3-round-medium" placeholder="전화번호를 입력하세요!">
+			</div>
+			<!-- 추가된 부분  -->
+			<div class="w3-col mgt10">
+				<label for="file1" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">프로필 사진 : </label>
+				<div class="w3-col m8" id="filefr">
+					<input type="file" name="file" id="file1" class="w3-input w3-border w3-round-medium file" placeholder="이미지 파일 선택!">
+				</div>
+			</div>
+			
+			<div class="w3-col mgt10 w3-margin-bottom none" id="preView">
+				<label for="file" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">미리보기 : </label>
+				<div class="w3-col m8 w3-center pdl10" id="imgfr">
+				</div>
+			</div>
+			<div class="w3-col mgt10 mgb20">
+				<label for="gen" class="w3-col s7 m3 w3-right-align pdr10 w3-text-gray">성 별 :</label>
+				<div class="w3-col s12 m8 w3-center">
+					<div class="w3-col s6">
+						<input class="w3-radio gen" type="radio" name="gender" id="male" value="male">
+							<label for="male" class="mgl10"> 남 자</label>
+					</div>
+					<div class="w3-col s6">
+						<input class="w3-radio gen" type="radio" name="gender" id="female" value="female">
+							<label for="female" class="mgl10"> 여 자</label>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col mgt10 mgb20 none" id="avatar">
+				<label class="w3-col s3 w3-right-align pdr10 w3-text-gray">아 바 타 :</label>
+				<div class="w3-col s12 m8 w3-center">
+					<!-- 남성 아바타  -->
+					<div id="mavt" class="none">
+						<div class="inblock avtdiv">
+							<label for="avatar1" class="w3-col avtlb">
+								<img src="../img/img_avatar1.png" alt="xx" class="mgt9 avtst">
+							</label>
+							<input type="radio" name="avatar" id="avatar1" value="avatar1">
+						</div>
+						<div class="inblock avtdiv">
+							<label for="avatar2" class="w3-col avtlb">
+								<img src="../img/img_avatar2.png" alt="xx" class="mgt9 avtst">
+							</label>
+							<input type="radio" name="avatar" id="avatar2" value="avatar2">
+						</div>
+						<div class="inblock avtdiv">
+							<label for="avatar3" class="w3-col avtlb">
+								<img src="../img/img_avatar3.png" alt="xx" class="mgt9 avtst">
+							</label>
+							<input type="radio" name="avatar" id="avatar3" value="avatar3">
+						</div>
+					</div>
+					<!-- 여성 아바타 -->
+					<div id="favt" class="none">
+						<div class="inblock avtdiv">
+							<label for="avatar4" class="w3-col avtlb">
+								<img src="../img/img_avatar4.png" alt="xx" class="mgt9 avtst">
+							</label>
+							<input type="radio" name="avatar" id="avatar4" value="avatar4">
+						</div>
+						<div class="inblock avtdiv">
+							<label for="avatar5" class="w3-col avtlb">
+								<img src="../img/img_avatar5.png" alt="xx" class="mgt9 avtst">
+							</label>
+							<input type="radio" name="avatar" id="avatar5" value="avatar5">
+						</div>
+						<div class="inblock avtdiv">
+							<label for="avatar6" class="w3-col avtlb">
+								<img src="../img/img_avatar6.png" alt="xx" class="mgt9 avtst">
+							</label>
+							<input type="radio" name="avatar" id="avatar6" value="avatar6">
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<!-- 버튼 -->
+		<div class="w3-col w3-card-4 w3-margin-top">
+			<div class="w3-col s12 m4 w3-button w3-green w3-hover-lime w3-round-medium">home</div>
+			<div class="w3-col s12 m4 w3-button w3-orange w3-hover-yellow w3-round-medium" id="join">join</div>
+			<div class="w3-col s12 m4 w3-button w3-blue w3-hover-indigo w3-round-medium">login</div>
+		</div>
+	</div>
+</body>
+</html>

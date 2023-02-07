@@ -1,0 +1,73 @@
+.mxw650 {
+	max-width: 650px;
+}
+
+.mgt10 {
+	margin-top: 10px;
+}
+
+.mgl10 {
+	margin-left: 10px;
+}
+
+.mgt20 {
+	margin-top: 20px;
+}
+
+.mgb10 {
+	margin-bottom: 10px;	
+}
+
+.mgb20 {
+	margin-bottom: 20px;
+}
+
+.pdr10 {
+	padding-right: 10px;
+}
+
+.pdl10 {
+	padding-left: 10px;
+}
+
+label {
+	font-size: 14pt;
+	line-height: 230%;
+}
+.box100 {
+	width: 100px;
+	height: 100px;	
+}
+.imgbox {
+	width: 78px;
+	height: 78px;
+	overflow: hidden;
+}
+.img1 {
+	width: 78px;
+	height: auto;
+}
+.inblock {
+	display: inline-block;	
+}
+
+.none {
+	display: none;
+}
+.avtdiv {
+	width: 100px;
+	height: 120px;
+	overflow: hidden;
+}
+
+.avtlb {
+	width: 98px;
+	height: 98px;
+	border: 1px solid lightgray;
+}
+.avtst {
+	width: 80px;
+	height: 80px;
+	margin-top: 9px;
+	border: 1px solid lightgray;
+}
